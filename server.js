@@ -33,13 +33,13 @@ app.post("/create-payment-intent", async (req, res) => {
       payment_method_types: [paymentMethodType],
       description: 'Software development services',
       shipping: {
-        name: 'Jenny Rosen',
+        name: 'Zeep App',
         address: {
-          line1: '510 Townsend St',
-          postal_code: '98140',
-          city: 'San Francisco',
-          state: 'CA',
-          country: 'US',
+          line1: '11 rue La Fayette',
+          postal_code: '44000',
+          city: 'Nantes',
+          state: 'Loire Atlantique',
+          country: 'FR',
         },
       },
     });
