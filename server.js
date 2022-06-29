@@ -28,7 +28,7 @@ app.post("/create-payment-intent", async (req, res) => {
   const {paymentMethodType, currency, amount} = req.body;
   try {
     const paymentIntent = await stripe.paymentIntents.create({
-      amount: Number(amount) * 100, //lowest denomination of particular currency
+      amount: Number(amount), //lowest denomination of particular currency
       currency: currency,
       payment_method_types: [paymentMethodType],
       description: 'Software development services',
