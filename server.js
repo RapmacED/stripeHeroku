@@ -29,6 +29,7 @@ app.post("/create-payment-intent", async (req, res) => {
   try {
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Number(amount), //lowest denomination of particular currency
+      console.log(Number(amount)),
       currency: currency,
       payment_method_types: [paymentMethodType],
       description: 'Application de réservation pour la restauration',
