@@ -31,7 +31,7 @@ app.post("/create-payment-intent", async (req, res) => {
       amount: Number(amount), //lowest denomination of particular currency
       currency: currency,
       payment_method_types: [paymentMethodType],
-      description: 'Software development services',
+      description: 'Application de réservation pour la réstauration',
       shipping: {
         name: 'Zeep App',
         address: {
